@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando formulário de cadastro</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required>
+<p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email aqui..." required>
+    </p>
+    <p>
+        <label for="sobrevoce">Descrição</label>
+        <textarea name="sobrevoce" id="sobrevoce" cols="30" rows="10" placeholder="Nos conte mais sobre você..."></textarea>
+
+    </p>
+
+    <p>
+        <label for="modulos">Módulo</label>
+        <select name="modulo" id="modulos" required>
+            <option value="modulo1">Modulo1</option>
+            <option value="modulo2">Modulo2</option>
+            <option value="modulo3">Modulo3</option>
+            <option value="modulo4">Modulo4</option>
+        </select>
+    </p>
+    <p>
+        <label for="senha">senha</label>
+        <input type="password" placeholder="Digite sua senha..." id="senha" required>
+    </p>
+    <p>
+        <label for="confirmar">Confirmar senha</label>
+        <input type="password" placeholder="Digite sua senha novamente" id="confirmar" required>
+    </p>
+    <p>Deseja receber novidades no seu email?</p>
+    <p>
+        <label for="">Sim</label>
+        <input type="radio" name="selecione" id="sim" required>
+
+        <label for="Não">Não</label>
+        <input type="radio" name="selecione" id="nao" required>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+    </form>
+    
+</body>
+</html>
